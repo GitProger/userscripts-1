@@ -124,5 +124,12 @@ function rzdSet(elem, newValue) {
 			elem.style.background = "";
 		};
 	}
+
+	if (!confirmElements(elem)) {
+		alert("The confirmation failed!");
+	}
 }
 
+function confirmElements(e) {
+	return true;
+}
